@@ -1,0 +1,5 @@
+a=int(input("enter number:"))
+b=input("enter:")
+a,b= input().split()
+a,b=map(int, input().split())
+lst=list(map(int, input().split()))

@@ -1,0 +1,13 @@
+a=10
+a+=10
+print("add:",a)
+a-=10
+print("sub:",a)
+a*=10
+print("multiply:",a)
+a/=10
+print("divide:",a)
+a**=10
+print("exponential:",a)
+a%=10
+print("modulus:",a)
