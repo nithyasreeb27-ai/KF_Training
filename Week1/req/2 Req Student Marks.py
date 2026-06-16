@@ -25,6 +25,7 @@ grade_all=[]
 result_all=[]
 pass_num=0
 fail_num=0
+
 for i in range(n):
     name=input("enter name:")
     names.append(name)
@@ -36,6 +37,7 @@ for i in range(n):
     overall_total.append(total)
     avg=total/3
     avg_all.append(avg)
+    
     if(avg>=90 and math>=35 and science>=35 and english>=35):
         grade="A"
         result="pass"
@@ -60,9 +62,11 @@ for i in range(n):
         fail_num+=1
     grade_all.append(grade)
     result_all.append(result)
+
 print("""option1: Person info:
 option2: overall info:""")
-c=int(input("enter choice:"))
+c=int(input("enter choice:\n"))
+
 if(c==1):
     new_name=input("enter the name:")
     if new_name in names:
@@ -74,6 +78,7 @@ if(c==1):
         print("Result",result_all[idx])
     else:
         print("invalid entry")
+
 if(c==2):
     top_index=overall_total.index(max(overall_total))
     print("Top scorer:",names[top_index], "and their score is ",overall_total[top_index])
