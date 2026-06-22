@@ -23,6 +23,6 @@ else:
 print("Highest mark: ",max(maths,biology, chemistry, physics))
 print("Lowest mark: ",min(maths,biology, chemistry, physics))
 
-print("Grade: ",grade)
-print(f"total: {total}")
-print("average: ",avg)
+print("Grade:",grade)
+print(f"total:{total}")
+print("average:",avg)

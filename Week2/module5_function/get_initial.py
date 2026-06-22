@@ -8,9 +8,3 @@
 # n=input("enetr full name:").split()
 # print(get_initial(n))
 
-a=10
-def func(a=[]):
-    a.append(1)
-    return a
-print(func())
-print(func())

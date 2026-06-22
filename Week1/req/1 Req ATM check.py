@@ -1,16 +1,31 @@
+'''Create an ATM program with:
+Minimum balance as 5000 and the menu options should check balance, Deposit,Withdraw,Mini Statement and Exit options:
+Rules:
+    • User can perform multiple operations until Exit. 
+    • Withdrawal cannot exceed balance. 
+    • Deposit amount must be positive. 
+    • Store transaction history as a string. 
+    • Show all transaction in mini statements
+    • Maximum 3 incorrect PIN attempts. 
+    • Daily withdrawal limit.'''
+
+
 balance=5000
 pin=1234
 statement=""
 attempt=0
 withdrawal_limit=20000
+
 while(attempt<3):
     n=int(input("enter pin:"))
+    
     if(n!=pin):
         attempt+=1
         if(attempt<=2):
             print("Wrong pin! try again")
         else:
             print("only 3 attempts are allowed")
+    
     if(n==pin):
         withdrawn_today=0
         while True:
@@ -20,6 +35,7 @@ while(attempt<3):
     3. Withdraw
     4. Mini statement
     5. Exit""")
+            
             c=int(input("enter choice:"))
             if (c==1):
                 print(balance)

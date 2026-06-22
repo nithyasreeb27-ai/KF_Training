@@ -29,8 +29,5 @@ print(lookup[101]["name"])
 i=0
 for key, value in lookup.items():
     for id, details in value.items():
-        print(id)
-    break
-
-        # if(id=="name"):
-        #     print(id,details)
+        if(id=="name"):
+            print(id,details)

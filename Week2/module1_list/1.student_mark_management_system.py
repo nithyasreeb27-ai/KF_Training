@@ -1,5 +1,5 @@
 print("STUDENT MARK MANAGEMENT SYSTEM")
-length=int(input("enter number of subjects"))
+length=int(input("enter number of subjects:"))
 marks=list(map(int,input("enter marks:").split()))
 print("MENU:\n"
 "1. Display all marks \n" 

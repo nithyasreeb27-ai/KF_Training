@@ -1,3 +1,5 @@
+# pattern1
+
 def triangle(b,h):
     return (b*h)/2
 def rectangle(l,b):
@@ -7,48 +9,73 @@ def square(a):
 def circle(r):
     return 3.14*r*r
 
-# def shapes(n):
-#     if(n.lower()=="triangle"):
-#         b=int(input("enter value1:"))
-#         h=int(input("enter value2:"))
-#         return triangle(b,h)
-#     elif(n.lower()=="rectangle"):
-#         l=int(input("enter value1:"))
-#         b=int(input("enter value2:"))
-#         return rectangle(l,b)
-#     elif(n.lower()=="square"):
-#         a=int(input("enter value:"))
-#         return square(a)
-#     elif(n.lower()=="circle"):
-#         a=int(input("enter value:"))
-#         return circle(a)
+def shapes(n):
+    if(n.lower()=="triangle"):
+        b=int(input("enter value1:"))
+        h=int(input("enter value2:"))
+        return triangle(b,h)
+    elif(n.lower()=="rectangle"):
+        l=int(input("enter value1:"))
+        b=int(input("enter value2:"))
+        return rectangle(l,b)
+    elif(n.lower()=="square"):
+        a=int(input("enter value:"))
+        return square(a)
+    elif(n.lower()=="circle"):
+        a=int(input("enter value:"))
+        return circle(a)
 
+
+#pattern 2
 
 def triangle(*args):
-    b, h= args
-    return (b*h)/2
+    b, h = args
+    return (b * h) / 2
+
 def rectangle(*args):
-    l, b=args
-    return (l*b)
+    l, b = args
+    return l * b
+
 def square(*args):
-    a= args
-    return (a*a)
+    a, = args
+    return a * a
+
 def circle(*args):
-    r=args
-    return 3.14*r*r
+    r, = args
+    return 3.14 * r * r
 
-def shapes(n,*args):
-    if (n=="square"):
-        return square(*args)
-    elif (n=="triangle"):
+
+def shapes(shape, *args):
+
+    if shape.lower() == "triangle":
         return triangle(*args)
-    elif (n=="rectangle"):
-        return rectangle(*args)
-    if (n=="circle"):
-        return circle(*args)
-n=input("enter shape:")
-print(shapes(n,4))
 
+    elif shape.lower() == "rectangle":
+        return rectangle(*args)
+
+    elif shape.lower() == "square":
+        return square(*args)
+
+    elif shape.lower() == "circle":
+        return circle(*args)
+
+    else:
+        return "Invalid Shape"
+
+
+shape = input("Enter Shape: ")
+
+if shape.lower() in ("triangle", "rectangle"):
+    v1 = float(input("Enter value 1: "))
+    v2 = float(input("Enter value 2: "))
+    print(shapes(shape, v1, v2))
+
+elif shape.lower() in ("square", "circle"):
+    v1 = float(input("Enter value: "))
+    print(shapes(shape, v1))
+
+else:
+    print("Invalid Shape")
 
 # # ADVANCE
 # def calc(shapes,*args):

@@ -9,8 +9,8 @@ print("""Menu:
 2. sort by alphabets descending
 3. sort by length of student name
 4. sort by length of student name in descending
-3. sort by marks
-4. sort by marks descending""")
+5. sort by marks
+6. sort by marks descending""")
 n=int(input("enter choice:"))
 match n:
     case 1:
@@ -23,9 +23,9 @@ match n:
     case 4:
         b=sorted(students,key=lambda x:len(x[0]),reverse=True)
         print(b)
-    case 3:
+    case 5:
         b=sorted((students),key=lambda x:x[1])
         print(b)
-    case 4:
+    case 6:
         b=sorted((students),key=lambda x:x[1],reverse=True)
         print(b)

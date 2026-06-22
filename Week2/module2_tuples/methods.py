@@ -6,5 +6,3 @@ print(a.count(2))
 #Index
 
 print(a.index(4))
-
-print(a[2])

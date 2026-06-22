@@ -6,8 +6,9 @@ for i in range(10,0,-1):
 
 # sum of first 10 numbers
 
-a=int(input("enter:"))
+'''a=int(input("enter:"))
 sum=0
 for i in range(1,a+1):
     sum+=i
-print(sum)
+print(sum)'''
+

@@ -16,7 +16,7 @@
 def is_palindrome(n):
     s=""
     rev=""
-    for i.lower() in n:
+    for i in n:
         if(i==" "):
             continue
         else:

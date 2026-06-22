@@ -1,35 +1,35 @@
-# # Square
+# Square
 
-# def sqr(a):
-#     return (a*a)
-# n=int(input("enter:"))
-# print(sqr(n))
+def sqr(a):
+    return (a*a)
+n=int(input("enter:"))
+print(sqr(n))
 
-# # Cube
+# Cube
 
-# def cube(a):
-#     return (a*a*a)
-# n=int(input("enter:"))
-# print(cube(n))
+def cube(a):
+    return (a*a*a)
+n=int(input("enter:"))
+print(cube(n))
 
-# # Palindrome
+# Palindrome
 
-# def is_palindrome(a):
-#     rev=0
-#     num=a
-#     while(a>0):
-#         rem=a%10
-#         rev=(rev*10)+rem
-#         a=a//10
-#     if(a==rev):
-#         return True
-#     else:
-#         return False
-# n=int(input("enter :"))
-# if (is_palindrome(n)):
-#     print("Palindrome")
-# else:
-#     print("Not palindrome")
+def is_palindrome(a):
+    rev=0
+    num=a
+    while(a>0):
+        rem=a%10
+        rev=(rev*10)+rem
+        a=a//10
+    if(num==rev):
+        return True
+    else:
+        return False
+n=int(input("enter :"))
+if (is_palindrome(n)):
+    print("Palindrome")
+else:
+    print("Not palindrome")
 
 # Count vowels
 def count_vowels(a):
@@ -40,7 +40,8 @@ def count_vowels(a):
             count+=1
     return count
 n=input("enter:")
-if(count_vowels(n)>0):
-    print(count_vowels(n))
+count=count_vowels(n)
+if(count>0):
+    print("number of vowels are",count)
 else:
     print("no vowels")

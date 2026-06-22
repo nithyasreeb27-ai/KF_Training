@@ -1,8 +1,8 @@
 def sort_alph(n):
-    b=[]
-    for i in students:
-        b.append((i["name"]))
-    print(sorted(b))
+    # b=[]
+    # for i in students:
+    #     b.append((i["name"]))
+    # print(sorted(b))
     print(sorted(list(map(lambda x:x["name"],students))))
 
 def sort_alpha_desc(n):

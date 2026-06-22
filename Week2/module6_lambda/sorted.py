@@ -22,7 +22,7 @@ a=[
 print(sorted(a))
 b=sorted(
     a,
-    key=lambda x:x[0]
+    key=lambda x:x[1]
 )
 print(b)
 c=sorted(

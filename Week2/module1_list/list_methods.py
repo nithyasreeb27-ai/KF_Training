@@ -26,6 +26,6 @@ b=[40]
 
 # c=a.count(10)
 
-i=a.index(20)
+# i=a.index(20)
 
-print(i)
+print(a)

@@ -24,14 +24,13 @@ else:
     has_digit=dig>0
     has_spl_chr=spl_chr>0
 
-    category=(has_upper+
+    Number=(has_upper+
               has_lower+
               has_digit+
               has_spl_chr)
-    print(category)
-    if(category==4):
+    if(Number==4):
         print("strong password")
-    elif(4>category>=2):
+    elif(4>Number>=2):
         print("medium password")
-    elif(category<2):
+    elif(Number<2):
         print("Weak password")

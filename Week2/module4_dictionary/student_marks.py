@@ -5,18 +5,6 @@
 #     marks=list(map(int,input("enter marks:").split()))
 #     d[name]=marks
 
-# d={
-#     "a":[90, 98, 99],
-#     "b":[99, 97, 95]
-# }
-
-# student=input("enter student name:")
-# if student in d.keys():
-#     print(d[student])
-# else:
-#     print("Incorrect entry")
-
-
 d={
     101:{"name":"a","maths":98,"science":95,"english":92},
     102:{"name":"b","maths":96,"science":91,"english":93}
@@ -49,3 +37,5 @@ elif(n==3):
             print(d[key])
     else:
         print("invalid entry")
+else:
+    print("invalid choice")
