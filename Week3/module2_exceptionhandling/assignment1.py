@@ -24,9 +24,9 @@ def menu():
     try:
         n=int(input("enter number:"))
         if 0>=n or n>=5:
-            # raise choice_error("the choice should be between 1 and 4")
-            print("invalid choice")
-            return
+            raise choice_error("the choice should be between 1 and 4")
+            # print("invalid choice")
+            # return
         a=int(input("enter 1st number:"))
         b=int(input("enter 2nd number:"))
 
