@@ -1,0 +1,93 @@
+# 1. Date Formats
+
+| Format | Meaning               | Example Output |
+| ------ | --------------------- | -------------- |
+| `%Y`   | Year (4 digits)       | `2026`         |
+| `%y`   | Year (2 digits)       | `26`           |
+| `%m`   | Month (01-12)         | `06`           |
+| `%B`   | Full month name       | `June`         |
+| `%b`   | Short month name      | `Jun`          |
+| `%d`   | Day of month (01-31)  | `25`           |
+| `%j`   | Day of year (001-366) | `176`          |
+
+# 2. Weekday Formats
+
+| Format                      | Meaning                        | Example Output |
+| --------------------------- | ------------------------------ | -------------- |
+| `%A`                        | Full weekday name              | `Thursday`     |
+| `%a`                        | Short weekday name             | `Thu`          |
+| `%w`                        | Weekday as number (`0=Sunday`) | `4`            |
+| `%u` *(platform-dependent)* | Weekday (`1=Monday`)           | `4`            |
+
+
+# 3. Time Formats
+
+| Format | Meaning               | Example Output |
+| ------ | --------------------- | -------------- |
+| `%H`   | Hour (24-hour, 00-23) | `14`           |
+| `%I`   | Hour (12-hour, 01-12) | `02`           |
+| `%M`   | Minute (00-59)        | `37`           |
+| `%S`   | Second (00-59)        | `52`           |
+| `%f`   | Microseconds          | `456732`       |
+| `%p`   | AM / PM               | `PM`           |
+
+
+# 4. Time Zone
+
+| Format | Meaning       | Example Output |
+| ------ | ------------- | -------------- |
+| `%Z`   | Timezone name | `IST`          |
+| `%z`   | UTC offset    | `+0530`        |
+
+
+
+# 5. Common Combined Formats
+
+| Format         | Output                   |
+| -------------- | ------------------------ |
+| `%d/%m/%Y`     | `25/06/2026`             |
+| `%d-%m-%Y`     | `25-06-2026`             |
+| `%Y-%m-%d`     | `2026-06-25`             |
+| `%d-%b-%Y`     | `25-Jun-2026`            |
+| `%B %d, %Y`    | `June 25, 2026`          |
+| `%A, %d %B %Y` | `Thursday, 25 June 2026` |
+| `%H:%M:%S`     | `14:37:52`               |
+| `%I:%M:%S %p`  | `02:37:52 PM`            |
+
+
+# 6. Special Formats
+
+| Format | Meaning                      | Example                          |
+| ------ | ---------------------------- | -------------------------------- |
+| `%%`   | Prints `%`                   | `%`                              |
+| `%c`   | Complete date & time         | `Thu Jun 25 14:37:52 2026`       |
+| `%x`   | Locale's date representation | `06/25/26` *(depends on locale)* |
+| `%X`   | Locale's time representation | `14:37:52` *(depends on locale)* |
+
+
+# ⭐ The 10 You Should Memorize
+
+
+| Format | Meaning        |
+| ------ | -------------- |
+| `%Y`   | 4-digit year   |
+| `%m`   | Month number   |
+| `%d`   | Day            |
+| `%A`   | Full weekday   |
+| `%a`   | Short weekday  |
+| `%B`   | Full month     |
+| `%b`   | Short month    |
+| `%H`   | Hour (24-hour) |
+| `%M`   | Minute         |
+| `%S`   | Second         |
+
+
+### Easy Memory Trick
+
+| Lowercase | Meaning       | Uppercase | Meaning       |
+| --------- | ------------- | --------- | ------------- |
+| `%m`      | **m**onth     | `%M`      | **M**inute    |
+| `%b`      | short month   | `%B`      | full month    |
+| `%a`      | short weekday | `%A`      | full weekday  |
+| `%y`      | 2-digit year  | `%Y`      | 4-digit year  |
+| `%I`      | 12-hour clock | `%H`      | 24-hour clock |
