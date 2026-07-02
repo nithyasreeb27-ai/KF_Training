@@ -9,6 +9,6 @@ b="nithya"
 print(random.choice(a))
 print(random.choice(b))
 print(len(dir(random)))
-# random.shuffle(a)
+random.shuffle(a)
 print(a)
 # random.shuffle(b) # As string is immutable throws error

@@ -96,18 +96,15 @@
 # d.hello()
 # print(D.mro())
 
-
+# Attribute calling works for created object
 class Person:
     def __init__(self):
         self.name = "John"
 
-
 class Employee(Person):
     def __init__(self):
         self.salary = 50000
-
-
 e = Employee()
 
 print(e.salary)
-print(e.name)
+print(e.name) 

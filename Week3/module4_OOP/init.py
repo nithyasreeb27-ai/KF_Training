@@ -39,15 +39,15 @@ s.display()
 student.display(s)
 
 
-# # Modification using methods
+# Modification using methods
 
-# class Bankaccount:
-#     def __init__(self,name,amount):
-#         self.name=name
-#         self.balance=amount
-#     def display(self,amount):
-#         self.balance=self.balance+amount
-# a=Bankaccount("a",1000)
-# print(a.balance)
-# a.display(100)
-# print(a.balance)
+class Bankaccount:
+    def __init__(self,name,amount):
+        self.name=name
+        self.balance=amount
+    def display(self,amount):
+        self.balance=self.balance+amount
+a=Bankaccount("a",1000)
+print(a.balance)
+a.display(100)
+print(a.balance)

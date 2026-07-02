@@ -12,11 +12,11 @@ class Cat(Animal):
     def sound(self):
         print("Meow")
 
-if isinstance(Animal, Dog):
-    print("Animals")
 
+animals = [Animal(), Dog(), Cat()]
 
-# animals = [Animal(), Dog(), Cat()]
+for animal in animals:
+    animal.sound()
 
-# for animal in animals:
-#     animal.sound()
+# No inheritence
+# Duck typing happens here

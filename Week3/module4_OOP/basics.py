@@ -19,9 +19,3 @@
 # print(s1)
 # print(s1.name)
 
-def hello():
-    return("hello")
-
-h=hello()
-print(h) #prints function object
-print(hello())
